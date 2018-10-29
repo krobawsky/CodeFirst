@@ -1,0 +1,34 @@
+﻿@model semana_10_01.Models.Cliente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreCompañia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreCompañia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreContacto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreContacto)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdCliente }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
